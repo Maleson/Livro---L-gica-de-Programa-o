@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+
+<script>
+var numeroPensado = Math.round(Math.random() * 10);
+var numeroDaTentativa = 1;
+var mensagem;
+while(numeroDaTentativa <= 3) {
+	var chute = prompt("Qual número você acha que é?");
+	if(chute == numeroPensado) {
+		mensagem = "Parabéns, você acertou!";
+		break;
+	}else {
+		mensagem = "Você errou!";
+	}
+	numeroDaTentativa++;
+}
+document.write(mensagem)
+</script>
